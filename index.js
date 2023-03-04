@@ -1,10 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const { connection } = require("./config/db");
-const { userRouter } = require("./Routes/User.route");
 
 const { authenticate } = require("./Middleware/authenticate.middleware");
 const { router } = require("./routes/Bug.router");
+const { userRouter } = require("./Routes/User.route");
 
 const app = express();
 require("dotenv").config();
